@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +11,13 @@ body {
   color: #333;
 }
 
-/* Header */
 header {
   background-color: #003366;
   color: #fff;
-  padding: 15px 0;
+  padding: 30px 0;
   text-align: center;
+  height:150px;
+
 }
 
 header h1 {
@@ -40,11 +41,10 @@ nav a.active, nav a:hover {
   border-bottom: 2px solid #ffcc00;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: url('https://i.pinimg.com/1200x/7b/e6/a5/7be6a53e725918bd67c6de20d878516b.jpg') ;
+  padding: 150px 100px;
+  background: url(https://www.jotform.com/blog/wp-content/uploads/2020/05/real-estate-photography.jpg) ;
   color: black;
 }
 
@@ -54,15 +54,14 @@ nav a.active, nav a:hover {
 
 .btn {
   display: inline-block;
-  background-color: #ffcc00;
+  background-color: #36cdff;
   color: #003366;
   padding: 10px 20px;
   margin-top: 15px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
-/* Features */
 .features {
   display: flex;
   justify-content: space-around;
@@ -73,17 +72,23 @@ nav a.active, nav a:hover {
 }
 
 .feature-box {
+  padding-top: 100px;
   background: white;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width: 300px;
+  width: 550px;
+  height: 300px;
   text-align: center;
-  margin: 10px;
-  padding: 20px;
-  background: url('https://i.pinimg.com/1200x/7b/e6/a5/7be6a53e725918bd67c6de20d878516b.jpg') ;
+  margin-left: 0px;
+  margin-right: 0px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
-/* Listings */
 .listings {
   padding: 40px;
   text-align: center;
@@ -109,7 +114,6 @@ nav a.active, nav a:hover {
   border-radius: 8px 8px 0 0;
 }
 
-/* Contact */
 .contact {
   padding: 40px;
   text-align: center;
@@ -129,15 +133,15 @@ input, textarea {
   border-radius: 5px;
 }
 
-/* Footer */
 footer {
   background-color: #003366;
   color: #fff;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+  height: 200px;
 }
-/* === LISTINGS PAGE === */
+
 .listings-header {
   text-align: center;
   padding: 40px 20px;
@@ -152,7 +156,13 @@ footer {
   margin-top: 20px;
 }
 
-.filter-bar input, .filter-bar select {
+.filter-bar input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 400px;
+}
+.filter-bar select {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -161,6 +171,7 @@ footer {
 
 .property-listings {
   padding: 40px 20px;
+  background-color: #74dcff;
 }
 
 .property-card {
@@ -169,7 +180,8 @@ footer {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   margin: 15px;
-  width: 320px;
+  width: 500px;
+  height: 300px;
   transition: transform 0.3s ease;
 }
 
@@ -177,20 +189,24 @@ footer {
   transform: translateY(-5px);
 }
 
-.property-info {
-  padding: 15px;
+
+.property-info{
+  height:100%;
+  width:100%;
+
 }
 
 .property-info h3 {
   margin-bottom: 10px;
+  padding-top: 130px;
 }
 
 .property-info .price {
   color: #003366;
   font-weight: bold;
+
 }
 
-/* === CONTACT PAGE === */
 .contact-section {
   padding: 50px 20px;
   text-align: center;
@@ -235,14 +251,14 @@ footer {
   margin-bottom: 12px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .property-grid, .contact-container {
     flex-direction: column;
     align-items: center;
   }
 }
-/* === HERO SECTION === */
+
 .hero-section {
   position: relative;
   background: url('https://images.unsplash.com/photo-1560184897-502a4756b9b8?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
@@ -282,7 +298,6 @@ footer {
   width: 250px;
 }
 
-/* === FEATURED PROPERTIES === */
 .featured {
   text-align: center;
   padding: 50px 20px;
@@ -332,7 +347,6 @@ footer {
   margin-top: 30px;
 }
 
-/* === SERVICES SECTION === */
 .services {
   padding: 50px 20px;
   text-align: center;
